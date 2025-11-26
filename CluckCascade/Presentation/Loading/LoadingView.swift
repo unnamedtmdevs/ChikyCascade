@@ -88,7 +88,7 @@ struct LoadingView: View {
                 }
 
                 VStack(spacing: AppSpacing.sm) {
-                    Text("ChickCascade")
+                    Text("ChikyCascade")
                         .font(AppTypography.display())
                         .foregroundColor(Color.appColors.textPrimary)
                         .lineLimit(1)
