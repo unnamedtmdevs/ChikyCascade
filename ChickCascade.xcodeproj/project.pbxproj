@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		3A6FF78C2EBE31D1002C7E80 /* CluckCascade.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CluckCascade.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A6FF78C2EBE31D1002C7E80 /* ChickCascade.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChickCascade.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -40,7 +40,7 @@
 		3A6FF78D2EBE31D1002C7E80 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3A6FF78C2EBE31D1002C7E80 /* CluckCascade.app */,
+				3A6FF78C2EBE31D1002C7E80 /* ChickCascade.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,9 +48,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3A6FF78B2EBE31D1002C7E80 /* CluckCascade */ = {
+		3A6FF78B2EBE31D1002C7E80 /* ChickCascade */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3A6FF79F2EBE31D3002C7E80 /* Build configuration list for PBXNativeTarget "CluckCascade" */;
+			buildConfigurationList = 3A6FF79F2EBE31D3002C7E80 /* Build configuration list for PBXNativeTarget "ChickCascade" */;
 			buildPhases = (
 				3A6FF7882EBE31D1002C7E80 /* Sources */,
 				3A6FF7892EBE31D1002C7E80 /* Frameworks */,
@@ -63,11 +63,11 @@
 			fileSystemSynchronizedGroups = (
 				3A6FF78E2EBE31D1002C7E80 /* CluckCascade */,
 			);
-			name = CluckCascade;
+			name = ChickCascade;
 			packageProductDependencies = (
 			);
 			productName = CluckCascade;
-			productReference = 3A6FF78C2EBE31D1002C7E80 /* CluckCascade.app */;
+			productReference = 3A6FF78C2EBE31D1002C7E80 /* ChickCascade.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -85,7 +85,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3A6FF7872EBE31D1002C7E80 /* Build configuration list for PBXProject "CluckCascade" */;
+			buildConfigurationList = 3A6FF7872EBE31D1002C7E80 /* Build configuration list for PBXProject "ChickCascade" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -99,7 +99,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3A6FF78B2EBE31D1002C7E80 /* CluckCascade */,
+				3A6FF78B2EBE31D1002C7E80 /* ChickCascade */,
 			);
 		};
 /* End PBXProject section */
@@ -249,9 +249,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CluckCascade/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -259,16 +260,22 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.developer.CluckCascade;
+				PRODUCT_BUNDLE_IDENTIFIER = com.developer.chickcascade;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -277,9 +284,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CluckCascade/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -287,23 +295,29 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.developer.CluckCascade;
+				PRODUCT_BUNDLE_IDENTIFIER = com.developer.chickcascade;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3A6FF7872EBE31D1002C7E80 /* Build configuration list for PBXProject "CluckCascade" */ = {
+		3A6FF7872EBE31D1002C7E80 /* Build configuration list for PBXProject "ChickCascade" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3A6FF79D2EBE31D3002C7E80 /* Debug */,
@@ -312,7 +326,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3A6FF79F2EBE31D3002C7E80 /* Build configuration list for PBXNativeTarget "CluckCascade" */ = {
+		3A6FF79F2EBE31D3002C7E80 /* Build configuration list for PBXNativeTarget "ChickCascade" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3A6FF7A02EBE31D3002C7E80 /* Debug */,
