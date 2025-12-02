@@ -9,6 +9,7 @@ struct GameView: View {
 
     @State private var selectedPosition: TilePosition?
     @State private var showingPause: Bool = false
+    @State private var showingGameGuide: Bool = false
 
     private var session: GameSession? {
         gameService.session
@@ -78,6 +79,9 @@ var body: some View {
     .sheet(isPresented: $showingPause) {
         pauseSheet
     }
+    .sheet(isPresented: $showingGameGuide) {
+        GameGuideView()
+    }
     .onDisappear {
         if let session = gameService.session, session.mode == .freePlay {
             gameService.abandonSession()
@@ -114,6 +118,31 @@ var body: some View {
             } else {
                 metricCard(title: "Mode", value: "--", icon: "questionmark")
             }
+
+            Button(action: { showingGameGuide = true }) {
+                ZStack {
+                    Circle()
+                        .fill(
+                            LinearGradient(
+                                colors: [Color.appColors.accentPrimary, Color.appColors.accentSecondary],
+                                startPoint: .topLeading,
+                                endPoint: .bottomTrailing
+                            )
+                        )
+                        .frame(width: 44, height: 44)
+                        .overlay(
+                            Circle()
+                                .stroke(Color.appColors.borderEmphasis, lineWidth: 2)
+                        )
+
+                    Image(systemName: "exclamationmark")
+                        .font(.system(size: 20, weight: .bold))
+                        .foregroundColor(.white)
+                }
+            }
+            .buttonStyle(PlainButtonStyle())
+            .accessibilityLabel("How to play")
+            .accessibilityHint("Opens game instructions")
         }
         .padding(.vertical, AppSpacing.xs)
         .maxContentWidth(360)
