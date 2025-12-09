@@ -9,6 +9,9 @@ struct CluckCascadeApp: App {
     @StateObject private var progressStore: ProgressStore
 
     init() {
+        // Инициализируем AppsFlyer при запуске приложения
+        _ = AppsFlyerManager.shared
+        
         let storage = StorageService()
         let cascadeService = CascadeSolverService()
         let levelService = LevelService()
